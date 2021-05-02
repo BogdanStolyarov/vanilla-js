@@ -23,7 +23,7 @@ const info = {
 	]
 
 };
-console.log(info.favMovies);
+console.log(info.favMovies[2]);
 
 
 
