@@ -5,7 +5,9 @@ const info = {
 	city: "Moskow",
 	isMarried: true,
 	favMovies: ["Гарри Поттер", "Матрица", "Терминатор"],
-	favFood: [{
+	favFood: 
+	[
+		{
 			name: "Cуп",
 			fatty: false
 		},
@@ -22,3 +24,8 @@ const info = {
 
 };
 console.log(info.favMovies[2]);
+
+
+
+
+
