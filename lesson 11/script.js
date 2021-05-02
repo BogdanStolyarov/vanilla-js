@@ -1,19 +1,31 @@
-// Упорядочивание данных
-// Массивы array
-// Объекты object
-/*
-const mon = "Понедельник";
-const tue = "Вторник";
-const wed = "Среда";
-const thu = "Четверг";
-const fri = "Пятница";
+// {} --- Объект, [] --- Массив
+const info = {
+	name: "Bogdan",
+	age: "28",
+	city: "Moskow",
+	isMarried: true,
+	favMovies: ["Гарри Поттер", "Матрица", "Терминатор"],
+	favFood: 
+	[
+		{
+			name: "Cуп",
+			fatty: false
+		},
+		{
+			name: "Винегрет",
+			fatty: false
+		},
+		{
+			name: "Чизбургер",
+			fatty: false
+		},
 
-console.log(mon,tue,wed,thu,fri)
+	]
 
-*/
+};
+console.log(info.favMovies);
 
-const bogDan = "DAYOFSEX";
 
-const daysOfWeek = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье", "DAYOFSEX" ];
 
-console.log(daysOfWeek[7])
+
+
