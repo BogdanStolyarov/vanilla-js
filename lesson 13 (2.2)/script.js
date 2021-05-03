@@ -41,7 +41,7 @@
 
 
 const calculator = {
-	division: function(a, b){
+	division: function (a, b) {
 		return a / b;
 	}
 }
