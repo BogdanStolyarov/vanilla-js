@@ -1,16 +1,37 @@
-// if (4 > 5 === 5 > 10 || 6 > 0) {
-// 	console.log ("YOY RIGHT");
-// }
-// else {
-// 	console.log ("AmericanBoy");
-// }
+const title = document.querySelector('#title');
+const BASE_COLOUR = "rgb(52, 73, 94)";
+const OTHER_COLOUR = "#7f8c8d";
 
-const warningAge = prompt("Привет.А сколько-то годков, то ?");
-
-if (warningAge >= 18 && warningAge <= 20) {
-	console.log("А ты уверена-то?:)");
-} else if (warningAge >= 21) {
-	console.log("Я выезжаю к тебе");
-} else {
-	console.log("Пошла уроки учить, пиздючка");
+function clickMyWork() {
+	const currentColour = title.style.color;
+	if (currentColour === BASE_COLOUR) {
+		title.style.color = OTHER_COLOUR;
+	} else {
+		title.style.color = BASE_COLOUR;
+	}
 }
+
+
+
+function init() {
+	title.style.color = BASE_COLOUR;
+	title.addEventListener('click', clickMyWork)
+}
+
+init();
+
+
+function offlineMyWork() {
+	console.log("Потеряно соединение");
+}
+
+function onlineMyWork() {
+	console.log("Соединение восстановлено");
+}
+
+window.addEventListener('offline', offlineMyWork);
+window.addEventListener('online', onlineMyWork);
+
+
+// const title = document.querySelector('#title');
+// const BASE_COLOUR = 'rgb(52, 73, 94)';
