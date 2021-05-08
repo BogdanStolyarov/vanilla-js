@@ -5,15 +5,15 @@ const USER_LS = 'currentUsername',
 	SHOWING_CN = 'showing';
 
 function saveUsername(text) {
-	localStorage.setItem(USER_LS, text)
+	localStorage.setItem(USER_LS, text);
 }
 
 function submitHandler(event) {
 	event.preventDefault();
-	const inputValue = input.Value;
+	const inputValue = input.value;
 	showGreeting(inputValue);
+	saveUsername(inputValue);
 }
-
 
 function showGreeting(text) {
 	greetings.innerText = `Привет, ${text}`;
@@ -26,10 +26,10 @@ function askForUsername() {
 	form.addEventListener('submit', submitHandler);
 }
 
-
 function loadUsername() {
 	const currentUsername = localStorage.getItem(USER_LS);
 	if (currentUsername === null) {
+		// если пользователь не найден
 		askForUsername();
 	} else {
 		showGreeting(currentUsername);
